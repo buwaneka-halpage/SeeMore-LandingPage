@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import { BrandMark } from '@/components/BrandMark'
 import { Button } from '@/components/ui/button'
@@ -17,6 +18,8 @@ const links = [
 ]
 
 export function SiteHeader() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className="sticky top-0 z-40 border-b border-white/8 bg-[#0B0D11]/75 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-6">
@@ -35,12 +38,10 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <a href="#pilot" className="hidden sm:block">
-            <Button variant="teal" size="lg">
-              Book a Pilot Demo
-            </Button>
-          </a>
-          <Sheet>
+          <Button variant="teal" size="lg" className="hidden sm:inline-flex" asChild>
+            <a href="#pilot">Book a Pilot Demo</a>
+          </Button>
+          <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden" aria-label="Open menu">
                 <Menu />
@@ -57,16 +58,17 @@ export function SiteHeader() {
                   <a
                     key={link.href}
                     href={link.href}
+                    onClick={() => setMenuOpen(false)}
                     className="rounded-lg px-3 py-2.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
                   >
                     {link.label}
                   </a>
                 ))}
-                <a href="#pilot" className="mt-4">
-                  <Button variant="teal" className="w-full" size="lg">
+                <Button variant="teal" className="mt-4 w-full" size="lg" asChild>
+                  <a href="#pilot" onClick={() => setMenuOpen(false)}>
                     Book a Pilot Demo
-                  </Button>
-                </a>
+                  </a>
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>

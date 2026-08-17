@@ -9,6 +9,9 @@ console.assert(base.breakEvenMonth === 4, `break-even ${base.breakEvenMonth}`)
 const fleet = computeRoi({ glasses: 86, tours: 20, surcharge: 5 })
 console.assert(fleet.monthlyProfit === 4300, `fleet ${fleet.monthlyProfit}`)
 
+const cover = computeRoi({ glasses: 1, tours: 10, surcharge: 5, lease: 50 })
+console.assert(cover.profitPerGlass === 0, `cover ${cover.profitPerGlass}`)
+
 const stalled = computeRoi({ glasses: 10, tours: 5, surcharge: 5, lease: 50 })
 console.assert(!Number.isFinite(stalled.breakEvenMonth), 'should not break even')
 

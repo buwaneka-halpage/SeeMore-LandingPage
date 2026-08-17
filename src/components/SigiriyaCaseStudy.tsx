@@ -18,7 +18,7 @@ export function SigiriyaCaseStudy({ triggerClassName }: { triggerClassName?: str
           <ArrowUpRight />
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-lg border-white/10 bg-card">
+      <DialogContent className="max-w-lg sm:max-w-lg border-white/10 bg-card">
         <DialogHeader>
           <DialogTitle className="text-xl tracking-tight">Sigiriya, reconstructed</DialogTitle>
           <DialogDescription>

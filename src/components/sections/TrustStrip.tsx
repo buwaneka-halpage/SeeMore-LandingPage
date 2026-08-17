@@ -10,7 +10,7 @@ const partners = [
 export function TrustStrip() {
   return (
     <section className="border-y border-white/8 bg-[#0E1016]">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6">
         <p className="text-center text-sm text-muted-foreground">
           Built for Sri Lanka&apos;s leading DMCs and Boutique Operators.
         </p>

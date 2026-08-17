@@ -386,7 +386,7 @@ const GlobalSpotlight: React.FC<{
         rgba(${glowColor}, 0.01) 65%,
         transparent 70%
       );
-      z-index: 200;
+      z-index: 8;
       opacity: 0;
       transform: translate(-50%, -50%);
       mix-blend-mode: screen;
