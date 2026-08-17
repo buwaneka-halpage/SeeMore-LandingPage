@@ -20,7 +20,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/8 bg-[#0B0D11]/75 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-6">
-        <a href="#top" className="shrink-0" aria-label="AISee Travel home">
+        <a href="#top" className="shrink-0" aria-label="See Mo home">
           <BrandMark />
         </a>
         <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">

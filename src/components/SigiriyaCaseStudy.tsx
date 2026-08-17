@@ -35,7 +35,7 @@ export function SigiriyaCaseStudy({ triggerClassName }: { triggerClassName?: str
             </p>
           </div>
           <div className="rounded-xl border border-white/8 bg-black/20 p-4">
-            <p className="font-mono text-[10px] tracking-widest text-teal uppercase">AISee overlay</p>
+            <p className="font-mono text-[10px] tracking-widest text-teal uppercase">See Mo overlay</p>
             <p className="mt-1 text-muted-foreground">
               Spatial audio isolated the guide in German and Mandarin. AR water filled the fountains exactly
               where each guest looked. First-person captures synced to phones at the coach.

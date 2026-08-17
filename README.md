@@ -1,10 +1,20 @@
-# AISee Travel — Landing Page
+# See Mo — Landing Page
 
-Premium B2B landing page for **AISee Travel** (SeeMore): Hardware-as-a-Service AR glasses for Sri Lankan DMCs and tour operators.
+Premium B2B landing page for **See Mo**: Hardware-as-a-Service AR glasses for Sri Lankan DMCs and tour operators.
 
 This is a static Vite + React app. Hosting only needs the `dist/` folder.
 
 ## Develop
+
+If you already ran install on Vite 8, delete the broken native bindings first:
+
+```bash
+rm -rf node_modules
+npm install
+npm run dev
+```
+
+Fresh clone:
 
 ```bash
 npm install

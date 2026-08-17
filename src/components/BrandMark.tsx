@@ -15,7 +15,7 @@ export function BrandMark({ className }: { className?: string }) {
         <circle cx="21" cy="16" r="4.2" stroke="#2DD4C8" strokeWidth="1.5" />
       </svg>
       <span className="text-[15px] font-medium tracking-tight text-foreground">
-        AISee Travel
+        See Mo
       </span>
     </span>
   )
