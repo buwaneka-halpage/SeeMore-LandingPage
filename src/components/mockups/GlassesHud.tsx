@@ -54,15 +54,20 @@ export function GlassesHud() {
         </svg>
       </div>
 
-      <div className="mt-4 grid grid-cols-3 gap-2">
+      <div className="mt-4 grid grid-cols-3 gap-1.5 sm:gap-2">
         {[
-          ['LAT', '7.9570° N'],
-          ['AUDIO', 'Isolated'],
+          ['LAT', '7.96°N'],
+          ['AUDIO', 'ISO'],
           ['MESH', '94%'],
         ].map(([k, v]) => (
-          <div key={k} className="rounded-lg border border-white/8 bg-black/30 px-2.5 py-2.5">
-            <p className="font-mono text-[10px] tracking-widest text-muted-foreground">{k}</p>
-            <p className="mt-1 font-mono text-sm text-foreground">{v}</p>
+          <div
+            key={k}
+            className="min-w-0 overflow-hidden rounded-lg border border-white/8 bg-black/30 px-1.5 py-2 sm:px-2.5 sm:py-2.5"
+          >
+            <p className="font-mono text-[9px] tracking-widest text-muted-foreground sm:text-[10px]">{k}</p>
+            <p className="mt-1 truncate font-mono text-[11px] leading-tight text-foreground sm:text-xs">
+              {v}
+            </p>
           </div>
         ))}
       </div>
