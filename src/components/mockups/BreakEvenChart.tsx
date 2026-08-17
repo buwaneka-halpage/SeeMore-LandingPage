@@ -10,9 +10,9 @@ export function BreakEvenChart({ profitPerGlass, hardwareBuy = 200 }: Props) {
   const months = 12
   const innerW = width - pad.l - pad.r
   const innerH = height - pad.t - pad.b
-  const maxY = Math.max(hardwareBuy * 1.6, profitPerGlass * months, 1)
+  const maxY = Math.max(hardwareBuy * 1.6, Math.max(profitPerGlass, 0) * months, 1)
   const x = (m: number) => pad.l + (m / months) * innerW
-  const y = (v: number) => pad.t + innerH - (v / maxY) * innerH
+  const y = (v: number) => pad.t + innerH - (Math.max(v, 0) / maxY) * innerH
   const points = Array.from({ length: months + 1 }, (_, m) => `${x(m)},${y(m * profitPerGlass)}`).join(' ')
   const cross = profitPerGlass > 0 ? Math.min(months, hardwareBuy / profitPerGlass) : null
 

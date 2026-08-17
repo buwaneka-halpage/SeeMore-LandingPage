@@ -40,7 +40,7 @@ const cards = [
 
 export function SolutionBento() {
   return (
-    <section id="product" className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+    <section id="product" className="mx-auto max-w-6xl px-5 py-20 sm:px-6">
       <AnimatedContent distance={36} duration={0.7} threshold={0.15}>
         <p className="font-mono text-[11px] tracking-[0.22em] text-teal uppercase">The product</p>
         <h2 className="mt-3 max-w-2xl text-3xl font-medium tracking-tight sm:text-4xl">

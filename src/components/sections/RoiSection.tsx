@@ -18,13 +18,13 @@ export function RoiSection() {
 
   return (
     <section id="roi" className="border-y border-white/8 bg-[#0E1016]">
-      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-6">
         <AnimatedContent distance={36} duration={0.7}>
           <p className="font-mono text-[11px] tracking-[0.22em] text-amber uppercase">Unit economics</p>
           <h2 className="mt-3 text-3xl font-medium tracking-tight sm:text-4xl">The HaaS business case</h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Operators lease glasses at $50 / unit / month and upsell the AR experience at $5. Twenty tours
-            cover the lease. Everything after that is margin.
+            Operators lease glasses at $50 / unit / month and upsell the AR experience at $5. Ten tours
+            cover the lease. Twenty tours leave $50 net profit per glass.
           </p>
         </AnimatedContent>
 
@@ -83,7 +83,7 @@ export function RoiSection() {
                   Monthly fleet profit
                 </p>
                 <p className="mt-1 font-mono text-3xl text-teal">
-                  ${' '}
+                  $
                   <CountUp
                     key={roi.monthlyProfit}
                     to={roi.monthlyProfit}
@@ -123,13 +123,15 @@ function Field({
   current: number
   onChange: (n: number) => void
 }) {
+  const id = label.toLowerCase().replace(/[^a-z0-9]+/g, '-')
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <Label>{label}</Label>
+        <Label htmlFor={id}>{label}</Label>
         <span className="font-mono text-xs text-muted-foreground">{value}</span>
       </div>
       <Slider
+        id={id}
         min={min}
         max={max}
         step={1}

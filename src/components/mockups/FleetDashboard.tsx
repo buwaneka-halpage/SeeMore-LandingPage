@@ -32,7 +32,7 @@ export function FleetDashboard() {
           +$
           <CountUp to={4280} separator="," duration={2.2} />
         </p>
-        <p className="mt-1 text-sm text-muted-foreground">86-glass DMC fleet · HaaS lease paid</p>
+        <p className="mt-1 text-sm text-muted-foreground">Sample DMC fleet · HaaS lease paid</p>
       </div>
 
       <div className="mt-4 space-y-2">

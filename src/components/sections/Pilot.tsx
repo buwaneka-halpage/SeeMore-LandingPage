@@ -20,14 +20,19 @@ export function Pilot() {
       at: new Date().toISOString(),
     }
     if (!payload.name || !payload.company || !payload.fleetSize) return
-    const existing = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]') as unknown[]
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([...existing, payload]))
+    try {
+      const existing = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]') as unknown
+      const list = Array.isArray(existing) ? existing : []
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...list, payload]))
+    } catch {
+      // ponytail: static host — persist when available, still show success
+    }
     setSubmitted(true)
   }
 
   return (
     <section id="pilot" className="border-t border-white/8 bg-[#0E1016]">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
           <p className="font-mono text-[11px] tracking-[0.22em] text-teal uppercase">Q3 2026 · 5 seats</p>
           <h2 className="mt-3 text-3xl font-medium tracking-tight sm:text-4xl">

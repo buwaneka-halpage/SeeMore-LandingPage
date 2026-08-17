@@ -4,7 +4,7 @@ import SpotlightCard from '@/components/SpotlightCard'
 
 export function Markets() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+    <section className="mx-auto max-w-6xl px-5 py-20 sm:px-6">
       <AnimatedContent distance={36} duration={0.7}>
         <p className="font-mono text-[11px] tracking-[0.22em] text-muted-foreground uppercase">
           Target markets

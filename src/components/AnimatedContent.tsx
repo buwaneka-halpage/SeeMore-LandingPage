@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -47,9 +47,17 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+      el.style.visibility = 'visible';
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      return;
+    }
 
     let scrollerTarget: Element | string | null = container || document.getElementById('snap-main-container') || null;
 

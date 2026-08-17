@@ -7,8 +7,7 @@ export function SiteFooter() {
         <div>
           <BrandMark />
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-            AR smart glasses for destination management companies. Leased, monitored, and
-            reconstructed in Sri Lanka.
+            AR smart glasses for destination management companies. Leased and monitored across Sri Lanka.
           </p>
         </div>
         <div className="space-y-2 text-sm text-muted-foreground sm:text-right">
@@ -17,7 +16,7 @@ export function SiteFooter() {
           </p>
           <p>Colombo · Q3 2026 Pilot</p>
           <a href="#pilot" className="text-teal hover:underline">
-            Apply for a demo fleet
+            Apply for the Pilot
           </a>
         </div>
       </div>
