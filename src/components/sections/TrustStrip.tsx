@@ -28,7 +28,7 @@ export function TrustStrip() {
               title: p.name,
               ariaLabel: `${p.name} placeholder`,
             }))}
-            speed={70}
+            speed={42}
             gap={56}
             logoHeight={28}
             fadeOut

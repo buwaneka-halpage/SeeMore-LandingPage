@@ -56,7 +56,7 @@ export function Pilot() {
           ) : (
             <form className="space-y-4" onSubmit={onSubmit}>
               <Field id="name" name="name" label="Name" placeholder="Nimal Perera" />
-              <Field id="company" name="company" label="Company" placeholder="Operator / DMC" />
+              <Field id="company" name="company" label="Company" placeholder="e.g. Ceylon Expeditions" />
               <Field id="fleetSize" name="fleetSize" label="Fleet size" placeholder="e.g. 24 glasses" />
               <Magnet padding={28} magnetStrength={4} wrapperClassName="block w-full">
                 <StarBorder as="div" color="#2DD4C8" speed="5s" thickness={1} className="block w-full rounded-xl">

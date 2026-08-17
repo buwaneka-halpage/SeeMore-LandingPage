@@ -56,7 +56,7 @@ export function Hero() {
                 </Button>
               </a>
             </Magnet>
-            <SigiriyaCaseStudy triggerClassName="border border-white/12 bg-transparent hover:bg-white/5" />
+          <SigiriyaCaseStudy triggerClassName="border border-white/15 text-foreground hover:bg-white/5 hover:text-teal" />
           </div>
         </div>
 

@@ -45,7 +45,7 @@ export function SigiriyaCaseStudy({ triggerClassName }: { triggerClassName?: str
             {[
               ['38%', 'AR attach rate'],
               ['4.9', 'Guest score'],
-              ['M4', 'Break-even'],
+              ['Month 4', 'Break-even'],
             ].map(([n, l]) => (
               <div key={l} className="rounded-xl border border-white/8 bg-black/20 p-3 text-center">
                 <p className="font-mono text-lg text-teal">{n}</p>

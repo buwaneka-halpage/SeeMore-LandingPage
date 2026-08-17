@@ -47,8 +47,8 @@ export function BreakEvenChart({ profitPerGlass, hardwareBuy = 200 }: Props) {
         {Array.from({ length: 5 }, (_, i) => {
           const m = (i * months) / 4
           return (
-            <text key={m} x={x(m)} y={height - 10} textAnchor="middle" fill="#9AA3B5" fontSize="10" fontFamily="ui-monospace, monospace">
-              M{m}
+            <text key={m} x={x(m)} y={height - 10} textAnchor="middle" fill="#9AA3B5" fontSize="11" fontFamily="ui-monospace, monospace">
+              {m === 0 ? 'Start' : `Mo ${m}`}
             </text>
           )
         })}

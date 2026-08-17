@@ -10,7 +10,7 @@ const cards = [
     title: 'One guide. Every language.',
     description:
       'No more scrambling for expensive German or Mandarin guides. AISee translates your standard English-speaking guide in real-time with isolated spatial audio.',
-    icon: <Languages className="size-4" />,
+    icon: <Languages className="size-5" />,
   },
   {
     color: '#1C202B',
@@ -18,7 +18,7 @@ const cards = [
     title: 'Bring ruins to life.',
     description:
       'Dry fountains in Sigiriya burst with 3D augmented reality water exactly where the tourist is looking. Rocks become palaces. Context returns to the site.',
-    icon: <Landmark className="size-4" />,
+    icon: <Landmark className="size-5" />,
   },
   {
     color: '#1C202B',
@@ -26,7 +26,7 @@ const cards = [
     title: 'Head office, live.',
     description:
       'The AISee Fleet Dashboard gives head office real-time telemetry on guide performance, location adherence, and incident reports across every coach.',
-    icon: <RadioTower className="size-4" />,
+    icon: <RadioTower className="size-5" />,
   },
   {
     color: '#1C202B',
@@ -34,7 +34,7 @@ const cards = [
     title: 'Hands-free capture.',
     description:
       'First-person photo and video capture syncs directly to the tourist’s phone. No phones in the air. No missed Lion Rock summit.',
-    icon: <Camera className="size-4" />,
+    icon: <Camera className="size-5" />,
   },
 ]
 
