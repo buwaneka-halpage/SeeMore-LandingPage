@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 
-const STORAGE_KEY = 'aisee-pilot-applications'
+const STORAGE_KEY = 'see-mo-pilot-applications'
 
 export function Pilot() {
   const [submitted, setSubmitted] = useState(false)

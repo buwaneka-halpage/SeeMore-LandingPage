@@ -9,7 +9,7 @@ const cards = [
     label: '01 · Language',
     title: 'One guide. Every language.',
     description:
-      'No more scrambling for expensive German or Mandarin guides. AISee translates your standard English-speaking guide in real-time with isolated spatial audio.',
+      'No more scrambling for expensive German or Mandarin guides. See Mo translates your standard English-speaking guide in real-time with isolated spatial audio.',
     icon: <Languages className="size-5" />,
   },
   {
@@ -25,7 +25,7 @@ const cards = [
     label: '03 · Quality Control',
     title: 'Head office, live.',
     description:
-      'The AISee Fleet Dashboard gives head office real-time telemetry on guide performance, location adherence, and incident reports across every coach.',
+      'The See Mo Fleet Dashboard gives head office real-time telemetry on guide performance, location adherence, and incident reports across every coach.',
     icon: <RadioTower className="size-5" />,
   },
   {
@@ -45,7 +45,7 @@ export function SolutionBento() {
         <p className="font-mono text-[11px] tracking-[0.22em] text-teal uppercase">The product</p>
         <h2 className="mt-3 max-w-2xl text-3xl font-medium tracking-tight sm:text-4xl">
           The problem vs.{' '}
-          <ShinyText text="the AISee layer" color="#9aa3b5" shineColor="#2DD4C8" speed={3} />
+          <ShinyText text="the See Mo layer" color="#9aa3b5" shineColor="#2DD4C8" speed={3} />
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Operators overpay for multilingual staff. Guests miss the briefing in the crush at the rock.

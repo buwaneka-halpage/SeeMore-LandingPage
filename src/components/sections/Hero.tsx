@@ -44,7 +44,7 @@ export function Hero() {
             </GradientText>
           </div>
           <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
-            Equip your tour groups with AISee smart glasses. Deliver real-time translations, stunning AR
+            Equip your tour groups with See Mo smart glasses. Deliver real-time translations, stunning AR
             historical recreations, and monitor guide quality—all for one monthly HaaS lease.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
